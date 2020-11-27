@@ -1,8 +1,15 @@
 {% for blog in blogs %}
+<br>
+{{ blog.id }}
+<br>
+<img src="{{ blog.image.url }}">
+<br>
 {{ blog.title }}
 <br>
 {{ blog.text }}
 <br>
 {{ blog.created_date }}
+<br>
+<h1>{{ post.blog }}</h1>
 <br>
 {% endfor %}

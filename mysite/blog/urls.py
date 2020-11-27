@@ -7,5 +7,6 @@ urlpatterns = [
     path('users/',userlist),
     path('blog/',bloglist),
     path('post1/',post1list),
+    path('blog/<int:blog_id>/',blogDetailView)
 
 ]

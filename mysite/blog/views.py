@@ -19,4 +19,10 @@ def post1list(reguest):
     posts = Post1.objects.all()
     context = {'blogs':posts}
     return render(reguest,'blog/post1-template.html',context)
+def blogDetailView(reguest,blog_id):
+    blog = Post.objects.get(id=blog_id)
+    posts = blog.post1_set.all()
+    context = {'blog':blog,'posts':posts}
+    return render(reguest, 'blog/blog-detail.html',context)
+
 
